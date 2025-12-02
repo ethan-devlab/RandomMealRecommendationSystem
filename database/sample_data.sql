@@ -83,12 +83,12 @@ INSERT INTO meal_tags (meal_id, tag_id) VALUES
 
 -- 插入商家帳號
 INSERT INTO merchant_accounts (id, restaurant_id, merchant_name, email, phone, password_hash, created_at, updated_at) VALUES
-(1, 1, 'snackmaster', 'snackmaster@demo.com', '0912-000-001', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5GyYqYK5XZz8G', '2024-01-10 09:00:00', '2024-01-10 09:00:00'),
-(2, 2, 'italianvibes', 'italian@demo.com', '0912-000-002', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5GyYqYK5XZz8G', '2024-01-10 09:00:00', '2024-01-10 09:00:00'),
-(3, 3, 'tokyobites', 'tokyo@demo.com', '0912-000-003', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5GyYqYK5XZz8G', '2024-01-10 09:00:00', '2024-01-10 09:00:00'),
-(4, 4, 'spicycraft', 'spicy@demo.com', '0912-000-004', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5GyYqYK5XZz8G', '2024-01-10 09:00:00', '2024-01-10 09:00:00'),
-(5, 5, 'veggieheal', 'veggie@demo.com', '0912-000-005', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5GyYqYK5XZz8G', '2024-01-10 09:00:00', '2024-01-10 09:00:00'),
-(6, 6, 'burgerhub', 'burger@demo.com', '0912-000-006', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5GyYqYK5XZz8G', '2024-01-10 09:00:00', '2024-01-10 09:00:00');
+(1, 1, 'snackmaster', 'snackmaster@demo.com', '0912-000-001', 'pbkdf2_sha256$1000000$mtvuGDDYxvL9lRL3agAoMG$nqgWQ3wuAxVVeuf0Gc09WWe5BzmOvub5w4Y+E1ze2Js=', '2024-01-10 09:00:00', '2024-01-10 09:00:00'),
+(2, 2, 'italianvibes', 'italian@demo.com', '0912-000-002', 'pbkdf2_sha256$1000000$036CI01G2oILA2R4TCmbCH$tVqI2Eh/1o1QswGRaSDKYeOKS4gKvdwZ5e4HMf8KeVA=', '2024-01-10 09:00:00', '2024-01-10 09:00:00'),
+(3, 3, 'tokyobites', 'tokyo@demo.com', '0912-000-003', 'pbkdf2_sha256$1000000$62mMyS8SkWIcgvospETNCN$Qd9y64NoZZqS5G1t6wI3552PpZ9p0lS+YcFBiizy0pg=', '2024-01-10 09:00:00', '2024-01-10 09:00:00'),
+(4, 4, 'spicycraft', 'spicy@demo.com', '0912-000-004', 'pbkdf2_sha256$1000000$F0QTuifE6UutjXQ4FAQoFc$85LXhFB9+zsmZeD4kamKsH0COSGjF6nOEM4++/PIsq4=', '2024-01-10 09:00:00', '2024-01-10 09:00:00'),
+(5, 5, 'veggieheal', 'veggie@demo.com', '0912-000-005', 'pbkdf2_sha256$1000000$Yd7ElZrX6szGvwl1zGyqKM$tFgttrjXjyYFLGGzD+PEeHuscsQP3fmmxZxvwaUULaM=', '2024-01-10 09:00:00', '2024-01-10 09:00:00'),
+(6, 6, 'burgerhub', 'burger@demo.com', '0912-000-006', 'pbkdf2_sha256$1000000$aw9QUOong3ghi6X2GWHXYD$qHwQNT6wZFraxUl2TqqyTAI7T/yMkhhdEHMhsfDa+5M=', '2024-01-10 09:00:00', '2024-01-10 09:00:00');
 
 -- 插入餐點營養資訊
 INSERT INTO nutrition_info (meal_id, calories, protein, fat, carbohydrate, sodium, breakdown, created_at, updated_at) VALUES
@@ -100,9 +100,9 @@ INSERT INTO nutrition_info (meal_id, calories, protein, fat, carbohydrate, sodiu
 (38, 540.00, 32.00, 18.00, 45.00, 850.00, '{"style":"法式紅酒燉"}', '2024-01-10 10:00:00', '2024-01-10 10:00:00');
 
 INSERT INTO users (id, username, email, phone, password_hash, full_name, created_at, updated_at) VALUES
-(1, 'testuser1', 'test1@example.com', '0912-111-111', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5GyYqYK5XZz8G', '測試使用者一', '2024-01-05 10:00:00', '2024-01-05 10:00:00'),
-(2, 'testuser2', 'test2@example.com', '0912-222-222', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5GyYqYK5XZz8G', '測試使用者二', '2024-01-05 10:00:00', '2024-01-05 10:00:00'),
-(3, 'testuser3', 'test3@example.com', '0912-333-333', '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5GyYqYK5XZz8G', '測試使用者三', '2024-01-05 10:00:00', '2024-01-05 10:00:00');
+(1, 'testuser1', 'test1@example.com', '0912-111-111', 'pbkdf2_sha256$1000000$HNv8Fl5cu18NFslf3lHnCU$6TvDtYZoCrNrORLlADJ077jlou30XKeTNLdNYbPDyBI=', '測試使用者一', '2024-01-05 10:00:00', '2024-01-05 10:00:00'),
+(2, 'testuser2', 'test2@example.com', '0912-222-222', 'pbkdf2_sha256$1000000$TPnG16S98Mg0YDhMnRtcAZ$BLLvs1n77oRvtFID3ZIUa3AbfFrW9E4OC55zV2pjG5k=', '測試使用者二', '2024-01-05 10:00:00', '2024-01-05 10:00:00'),
+(3, 'testuser3', 'test3@example.com', '0912-333-333', 'pbkdf2_sha256$1000000$HcoDeF7kg5gsHmsaEPQ8sO$Np5OpUcYTe9EOFndp1DqLMBddiMlzwgTH2e5pNJ/gvo=', '測試使用者三', '2024-01-05 10:00:00', '2024-01-05 10:00:00');
 
 INSERT INTO user_preferences (user_id, cuisine_type, category, price_range, is_vegetarian, avoid_spicy, recommendation_cooldown_days) VALUES
 (1, '台式', '主餐', '低', FALSE, FALSE, 3),
