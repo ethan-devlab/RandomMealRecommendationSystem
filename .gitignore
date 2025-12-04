@@ -169,6 +169,9 @@ all_templates
 Merchant
 docs
 
+# test
+tests.py
+
 # database
 database/cli.py
 database/queries.sql
