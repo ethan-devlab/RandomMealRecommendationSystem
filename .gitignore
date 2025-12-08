@@ -170,7 +170,7 @@ Merchant
 docs
 
 # test
-tests.py
+# tests.py
 
 # database
 database/cli.py
